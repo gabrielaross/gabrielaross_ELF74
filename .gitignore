@@ -32,6 +32,7 @@
 *.out
 *.app
 *.bin
+*.dep
 Debug/
 settings/
 ewarm/
