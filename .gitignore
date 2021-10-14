@@ -5,6 +5,7 @@
 *.slo
 *.lo
 *.o
+*.a
 *.obj
 
 # Precompiled Headers
@@ -23,10 +24,14 @@
 # Compiled Static libraries
 *.lai
 *.la
-*.a
 *.lib
+*.map
 
 # Executables
 *.exe
 *.out
 *.app
+*.bin
+Debug/
+settings/
+ewarm/
