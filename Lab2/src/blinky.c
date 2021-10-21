@@ -100,27 +100,25 @@ main(void){
     SysTickIntRegister(SysTickIntHandler); //registers an interrupt handler for the systick interrupt
     SysTickEnable(); //enables the counter
     SysTickIntEnable(); //enables the interrupt
-    
     IntCounter = 0;
     
     GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0x0); //writes a value to the specified pin
     //(base address, bit-packed representation of the pins, value to write to the pins)
-    while(IntCounter < 12){//1 second to turn the led on
+    while(IntCounter<12){//1 second to turn the led on
     }
     
     GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1); //writes a value to the specified pin
     //(base address, bit-packed representation of the pins, value to write to the pins)
     PinRead = GPIOPinRead(GPIO_PORTJ_BASE,GPIO_PIN_0); //reads the value of the specified pins
     SysTickRead = SysTickValueGet(); //gets the value of the counter
-    IntCounter = 0;
     
-    while(PinRead == 1 && IntCounter < 36){ //while not pressed, until 3 seconds
+    while(PinRead == 1 && IntCounter<36){ //while not pressed, until 3 seconds
       if (IntCounter >= 36){
         printf("There was no interruption under 3 seconds \n");
       }
       PinRead = GPIOPinRead(GPIO_PORTJ_BASE,GPIO_PIN_0); //reads the value of the specified pins 
     }
     
-    ClockPress = SysTickValueGet() - SysTickRead + (SYSTEM_CLOCK_FREQ * IntCounter); //gets the value of the counter
+    ClockPress = SysTickValueGet()-SysTickRead+(SYSTEM_CLOCK_FREQ*IntCounter); //gets the value of the counter
     printf("Clocks: %d\n", ClockPress);
  }
