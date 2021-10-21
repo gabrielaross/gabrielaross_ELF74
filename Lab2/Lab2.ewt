@@ -2848,7 +2848,7 @@
     <group>
         <name>Source</name>
         <file>
-            <name>$PROJ_DIR$\..\..\TivaWare_C_Series-2.2.0.295\examples\boards\ek-tm4c1294xl\blinky\blinky.c</name>
+            <name>$PROJ_DIR$\src\blinky.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\src\startup_TM4C1294.s</name>
