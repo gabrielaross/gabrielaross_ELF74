@@ -1,0 +1,2 @@
+## Lab 2
+Variáveis volatile indicam ao compilador que a variável pode ser modificada sem o conhecimento do main. A variável ui32Loop é declarada como volatile dentro do main () para sinalizar que o compilador não deve otimizar nada dessa variável, facilitando o acesso a HW, mapeamento de memória I/O e uso de threads.
