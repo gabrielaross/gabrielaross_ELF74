@@ -335,9 +335,10 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>C:\Users\Gabriela Ross\Desktop\UTFPR\2021.2\Sistemas Embarcados\ThreadX\common\inc</state>
-                    <state>C:\Users\Gabriela Ross\Desktop\UTFPR\2021.2\Sistemas Embarcados\ThreadX</state>
-                    <state>C:\Users\Gabriela Ross\Desktop\UTFPR\2021.2\Sistemas Embarcados\ThreadX\ports\cortex_m4\iar\inc</state>
+                    <state>$PROJ_DIR$\..\drivers</state>
+                    <state>$PROJ_DIR$\..\..\ThreadX</state>
+                    <state>$PROJ_DIR$\..\..\ThreadX\common\inc</state>
+                    <state>$PROJ_DIR$\..\..\ThreadX\ports\cortex_m4\iar\inc</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -653,7 +654,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>1</hasPrio>
+                <hasPrio>0</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
@@ -794,7 +795,7 @@
                 </option>
                 <option>
                     <name>IlinkAdditionalLibs</name>
-                    <state>C:\Users\Gabriela Ross\Desktop\UTFPR\2021.2\Sistemas Embarcados\ThreadX\ports\cortex_m4\iar\example_build\Debug\Exe\tx.a</state>
+                    <state>$PROJ_DIR$\..\..\ThreadX\ports\cortex_m4\iar\example_build\Debug\Exe\tx.a</state>
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
